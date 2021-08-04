@@ -17,4 +17,3 @@ twitter: "https://twitter.com/gooveris"
 # Build settings
 markdown: kramdown
 permalink: pretty
-theme: jekyll-theme-slate
