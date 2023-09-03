@@ -1,0 +1,404 @@
+<html><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><head><style>body { font-family: "helvetica";font-size:13px;}
+h1 {padding:7px 5px 5px 5px;}
+h2 {padding:7px 5px 5px 5px;}
+h3 {padding:7px 5px 5px 5px;}
+h4 {padding:7px 5px 5px 5px;}@page {
+    header: html_myHeader;
+    footer: html_myFooter;
+}
+
+h1 {
+    border: 0px;
+    text-align: center;
+    margin: 10px 0px 5px 0px;
+    font-size: 18px;
+}
+
+h2 {
+    border: 0px;
+    text-align: center;
+    margin: 0px 0px 5px 0px;
+    font-size: 15px;
+}
+
+h3 {
+    border: 0px;
+    text-align: center;
+    margin: 10px 0px 5px 0px;
+    font-size: 14px;
+}
+
+h4 {
+    border: 0px;
+    text-align: center;
+    margin: 10px 0px 5px 0px;
+    padding: 5px 10px;
+    font-size: 13px;
+}
+
+h5 {
+    border: 0px;
+    margin: 10px 0px 10px 0px;
+    font-size: 12px;
+}
+
+h6 {
+    border: 0px;
+    margin: 10px 0px 10px 0px;
+    font-size: 12px;
+}
+
+.pdf_datatable {
+    border: none;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    font-size: 11px;
+}
+
+.pdf_datatable th {
+    border: 1px solid #bbbbbb;
+}
+
+.pdf_datatable td {
+    border: 1px solid #bbbbbb;
+    padding: 5px;
+}
+
+.error {
+    color: #ee0000;
+}
+
+.msg_info {
+    padding: 4px;
+    background-color: #ddffdd;
+    color: #000000;
+    border: 1px solid #00aa00;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.msg_error {
+    padding: 4px;
+    background-color: #dd0000;
+    font-size: 11px;
+    color: #ffffff;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.msg_alert {
+    padding: 4px;
+    background-color: #ffffaa;
+    color: #000000;
+    border: 1px solid #ff0000;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+ul {padding-top: 5px; margin-top: 0;}
+p {padding-bottom: 0; margin-bottom: 8px;}
+
+table {
+    border: 0px;
+    width: 100%;
+}
+
+td {
+    padding: 5px;
+    border: 0px;
+}
+
+th {
+    padding: 3px 5px;
+    background: #dddddd;
+}
+
+pre, code {background-color: #DDD;padding: 10px}
+
+@page :first {
+    header: html_firstpageheader;
+    footer: html_firstpagefooter;
+}
+
+@page rotated {
+    size: landscape;
+}
+
+@page pvertical {
+    size: portrait;
+}
+
+div.apaisada {
+    page: rotated;
+    page-break-before: none;
+}
+
+div.vertical {
+    page: pvertical;
+    page-break-before: none;
+}
+
+@page inicio_sin_cabecera {
+    margin-top: 0mm;
+    margin-bottom: 0mm;
+    margin-left: 0mm;
+    margin-right: 0mm;
+    header: _blank;
+    footer: _blank;
+}
+div.inicio_sin_cabecera {
+    page-break-before: none;
+    page: inicio_sin_cabecera;
+}
+
+@page final_sin_cabecera {
+    header: html_myHeader;
+    footer: html_myFooter;
+}
+
+div.final_sin_cabecera {
+    page-break-before: none;
+    page: final_sin_cabecera;
+}
+
+@page cartel_videovigilancia {
+    background-image: url('/admin/install/files/cartel-videovigilancia.jpg');
+    background-image-resize: 6;
+    margin-top: 8mm;
+    margin-bottom: 0mm;
+    header: _blank;
+    footer: _blank;
+}
+
+div.bg_cartel_videovigilancia {
+    page-break-before: none;
+    page: cartel_videovigilancia;
+}
+
+@page cartel_videovigilancia_end {
+    background-image: none;
+    header: html_myHeader;
+    footer: html_myFooter;
+}
+
+div.bg_cartel_videovigilancia_end {
+    page-break-before: none;
+    page: cartel_videovigilancia_end;
+}
+
+@page cartel_videovigilancia_personalizado {
+    background-image: url('/media/public/cartel-videovigilancia-personalizado.jpg');
+    background-image-resize: 6;
+    margin-top: 8mm;
+    margin-bottom: 0mm;
+    header: _blank;
+    footer: _blank;
+}
+
+div.bg_cartel_videovigilancia_personalizado {
+    page-break-before: none;
+    page: cartel_videovigilancia_personalizado;
+}
+
+@page cartel_videovigilancia_personalizado_end {
+    background-image: none;
+    header: html_myHeader;
+    footer: html_myFooter;
+}
+
+div.bg_cartel_videovigilancia_personalizado_end {
+    page-break-before: none;
+    page: cartel_videovigilancia_personalizado_end;
+}
+
+@page cartel_videovigilancia_desactivada {
+    background-image: url('/admin/install/files/cartel-videovigilancia_desactivada.jpg');
+    background-image-resize: 6;
+    margin-top: 8mm;
+    margin-bottom: 0mm;
+    header: _blank;
+    footer: _blank;
+}
+
+div.bg_cartel_videovigilancia_desactivada {
+    page-break-before: none;
+    page: cartel_videovigilancia_desactivada;
+}
+
+@page cartel_videovigilancia_desactivada_end {
+    background-image: none;
+    header: html_myHeader;
+    footer: html_myFooter;
+}
+
+div.bg_cartel_videovigilancia_desactivada_end {
+    page-break-before: none;
+    page: cartel_videovigilancia_desactivada_end;
+}
+
+@page cartel_videovigilancia_voz {
+    background-image: url('/admin/install/files/cartel-videovigilancia_voz.jpg');
+    background-image-resize: 6;
+    margin-top: 8mm;
+    margin-bottom: 0mm;
+    header: _blank;
+    footer: _blank;
+}
+
+div.bg_cartel_videovigilancia_voz {
+    page-break-before: none;
+    page: cartel_videovigilancia_voz;
+}
+
+@page cartel_videovigilancia_voz_end {
+    background-image: none;
+    header: html_myHeader;
+    footer: html_myFooter;
+}
+
+div.bg_cartel_videovigilancia_voz_end {
+    page-break-before: none;
+    page: cartel_videovigilancia_voz_end;
+}
+
+@page cartel_termovigilancia {
+    background-image: url('/admin/install/files/cartel-termovigilancia.jpg');
+    background-image-resize: 6;
+    margin-top: 8mm;
+    margin-bottom: 0mm;
+    header: _blank;
+    footer: _blank;
+}
+
+div.bg_cartel_termovigilancia {
+    page-break-before: none;
+    page: cartel_termovigilancia;
+}
+
+@page cartel_termovigilancia_end {
+    background-image: none;
+    header: html_myHeader;
+    footer: html_myFooter;
+}
+
+div.bg_cartel_termovigilancia_end {
+    page-break-before: none;
+    page: cartel_termovigilancia_end;
+}
+
+@page cartel_BgTermoControl {
+    background-image: url('/admin/install/files/cartel_BgTermoControl.jpg');
+    background-image-resize: 6;
+    margin-top: 8mm;
+    margin-bottom: 0mm;
+    header: _blank;
+    footer: _blank;
+}
+div.bg_cartel_BgTermoControl {
+    page-break-before: none;
+    page: cartel_BgTermoControl;
+}
+@page cartel_BgTermoControl_end {
+    background-image: none;
+    header: html_myHeader;
+    footer: html_myFooter;
+}
+div.bg_cartel_BgTermoControl_end {
+    page-break-before: none;
+    page: cartel_BgTermoControl_end;
+}
+
+@page BgFondo1 { 
+    background-image: url('/media/image/BgFondo1.jpg');
+    background-image-resize: 6;
+}
+div.BgFondo1 { page-break-before: none; page: BgFondo1; }
+@page FinalBgFondo1 { background-image: none; }
+div.FinalBgFondo1 { page-break-before: none; page: FinalBgFondo1; }
+
+@page BgFondo2 { background-image: url('/media/image/BgFondo2.jpg'); background-image-resize: 6; }
+div.BgFondo2 { page-break-before: none; page: BgFondo2; }
+@page FinalBgFondo2 { background-image: none; }
+div.FinalBgFondo2 { page-break-before: none; page: FinalBgFondo2; }
+
+@page BgFondo3 { background-image: url('/media/image/BgFondo3.jpg'); background-image-resize: 6; }
+div.BgFondo3 { page-break-before: none; page: BgFondo3; }
+@page FinalBgFondo3 { background-image: none;}
+div.FinalBgFondo3 { page-break-before: none; page: FinalBgFondo3; }
+
+@page BgFondo4 { background-image: url('/media/image/BgFondo4.jpg'); background-image-resize: 6; }
+div.BgFondo4 { page-break-before: none; page: BgFondo4; }
+@page FinalBgFondo4 { background-image: none; }
+div.FinalBgFondo4 { page-break-before: none; page: FinalBgFondo4; }
+
+@page BgFondo5 { background-image: url('/media/image/BgFondo5.jpg'); background-image-resize: 6; }
+div.BgFondo4 { page-break-before: none; page: BgFondo5; }
+@page FinalBgFondo5 { background-image: none; }
+div.FinalBgFondo5 { page-break-before: none; page: FinalBgFondo5; }
+
+@page BgFondo6 { background-image: url('/media/image/BgFondo6.jpg'); background-image-resize: 6; }
+div.BgFondo6 { page-break-before: none; page: BgFondo6; }
+@page FinalBgFondo6 { background-image: none; }
+div.FinalBgFondo6 { page-break-before: none; page: FinalBgFondo6; }
+
+@page BgFondo7 { background-image: url('/media/image/BgFondo7.jpg'); background-image-resize: 6; }
+div.BgFondo7 { page-break-before: none; page: BgFondo7; }
+@page FinalBgFondo7 { background-image: none; }
+div.FinalBgFondo7 { page-break-before: none; page: FinalBgFondo7; }
+
+@page BgFondo8 { background-image: url('/media/image/BgFondo8.jpg'); background-image-resize: 6; }
+div.BgFondo8 { page-break-before: none; page: BgFondo8; }
+@page FinalBgFondo8 { background-image: none; }
+div.FinalBgFondo8 { page-break-before: none; page: FinalBgFondo8; }
+
+@page BgFondo9 { background-image: url('/media/image/BgFondo9.jpg'); background-image-resize: 6; }
+div.BgFondo9 { page-break-before: none; page: BgFondo9; }
+@page FinalBgFondo9 { background-image: none; }
+div.FinalBgFondo9 { page-break-before: none; page: FinalBgFondo9; }
+
+@page BgDiploma1 { background-image: url('/media/image/BgFondo6.jpg'); background-image-resize: 6; }
+div.BgDiploma1 { page-break-before: none; page: BgDiploma1; }
+@page FinalBgDiploma1 { background-image: none; }
+div.FinalBgDiploma1 { page-break-before: none; page: FinalBgDiploma1; }
+h1 {background:#FFFFFF;color:#333333;}
+h2 {background:#000066;color:#FFFFFF;}
+h3 {background:#FFCC00;color:#333333;}
+h4 {background:#CCCCCC;color:#333333;}
+.pdf_datatable th {background:#BAE6FF;color:#333333}
+</style></head><body><div style="">
+<p style="text-align:center"><span style="font-size:14px"><strong>CONSENTIMIENTO EXPLÍCITO PARA EL TRATAMIENTO DE IMÁGENES EN LA PÁGINA WEB</strong></span></p>
+
+<p style="text-align: left;"><br />
+<span style="font-size:12px">SEVILLA, a 25/08/2023.</span></p>
+
+<p><span style="font-size:12px">C.D. TENIS PADEL SEVILLA es el <strong>Responsable del tratamiento</strong> de los datos personales del <strong>Interesado </strong>y le informa de que estos datos se tratarán de conformidad con lo dispuesto en el Reglamento (UE) 2016/679, de 27 de abril (GDPR), la Ley Orgánica 3/2018, de 5 de diciembre (LOPDGDD), y la Ley (ES) 1/1982 de protección civil, derecho al honor, intimidad personal y familiar y a la propia imagen, por lo que se le facilita la siguiente información del tratamiento:</span></p>
+
+<p><span style="font-size:12px"><strong>Fines y legitimación del tratamiento</strong>: publicación de la fotografía del personal con sus datos identificativos y profesionales para mostrarlos en la página web del Responsable con fines de transparencia (por consentimiento del interesado, art. 6.1.a GDPR).</span></p>
+
+<p><span style="font-size:12px"><strong>Criterios de conservación de los datos</strong>: se conservarán durante no más tiempo del necesario para mantener el fin del tratamiento o mientras existan prescripciones legales que dictaminen su custodia y cuando ya no sea necesario para ello, se suprimirán con medidas de seguridad adecuadas para garantizar la anonimización de los datos o la destrucción total de los mismos.</span></p>
+
+<p><span style="font-size:12px"><strong>Comunicación de los datos</strong>: a excepción de la publicación de la página web del Responsable, no se comunicarán los datos a terceros sin su consentimiento, salvo obligación legal. </span></p>
+
+<p><span style="font-size:12px"></span><span style="font-size:12px"><strong>Derechos que asisten al Interesado</strong>:</span></p>
+
+<p style="text-align:left"><span style="font-size:12px">- Derecho a retirar el consentimiento en cualquier momento.<br />
+- Derecho de acceso, rectificación, portabilidad y supresión de sus datos y de limitación u oposición a su tratamiento.<br />
+- Derecho a presentar una reclamación ante la Autoridad de control (www.aepd.es) si considera que el tratamiento no se ajusta a la normativa vigente.</span></p>
+
+<p style="text-align:left"><span style="font-size:12px"><strong>Datos de contacto para ejercer sus derechos:</strong></span></p>
+
+<p style="text-align:left"><span style="font-size:12px">C.D. TENIS PADEL SEVILLA. C/ MARQUÉS DE NERVIÓN, 42 - 41005 SEVILLA  (Sevilla). E-mail: chari-t@telefonica.net</span><br />
+<br />
+El <strong>Interesado </strong>o su representante legal consiente el tratamiento de sus datos en los términos expuestos:<br />
+<span style="font-size:12px"></span></p>
+
+<p style="text-align:left"><span style="font-size:12px">Nombre ............................................................................................................, con NIF .............................</span></p>
+
+<p style="text-align:left"><span style="font-size:12px">Representante legal de ...................................................................................., con NIF .............................</span></p>
+
+<p style="text-align:left"><span style="font-size:12px">Firma:</span></p>
+</div>
+</body></html>
