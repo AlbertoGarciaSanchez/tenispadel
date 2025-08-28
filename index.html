@@ -1,3 +1,24 @@
+
+  <style>
+    .contenedor-imagenes {
+      display: flex;
+      justify-content: center; /* centra horizontalmente */
+      gap: 15px; /* separación entre imágenes */
+      padding: 20px;
+      border: 3px solid #ccc; /* marco del grupo */
+      border-radius: 12px; /* esquinas redondeadas */
+      background-color: #f9f9f9; /* fondo suave para resaltar */
+      width: fit-content; /* ajusta el marco al contenido */
+      margin: 0 auto; /* centra todo el bloque */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* sombra suave */
+    }
+
+    .contenedor-imagenes img {
+      max-width: 300px; /* ajusta el tamaño si son grandes */
+      border-radius: 8px; /* redondea las imágenes */
+      border: 1px solid #ddd; /* pequeño borde individual */
+    }
+  </style>
 ---
 layout: default
 id: main
@@ -270,9 +291,11 @@ id: main
 
 </div>
 </div>
+  <div class="contenedor-imagenes">
 			<img src="docs/2025/tarifa_escuela_padel.jpeg" width="300" height="400">
 			<img src="docs/2025/tarifa_escuela_tenis.jpeg" width="300" height="400">
 			<img src="docs/2025/partido_profesor.jpeg" width="300" height="400">
+  </div>
 </div>
 </div>
 
